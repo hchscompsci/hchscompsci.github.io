@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title> HCHS Computer Science Club</title>
+<style>
+ 
+h1{ color: rgb(252, 3, 148);}
+body{font-family: "Roboto", sans-serif;
+background-color: rgba(66, 0, 122, .75); }
+         
+  .button
+ { background-color: #960000;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 8px #999;
+  }
+ 
+ .button:hover {background-color: #c20000}
+
+.button, .active {
+  background-color: #960000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  }
+
+.info {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+ 
+</style>
+    </head>
+    <body>
+<Center>
+    <h1>Welcome to Computer Science Club!</h1>
+    <h2><I>Your leaders are: Ifrah Hammad, Varun Mohan, and Aaron Moseley.</I></h2><br>
+      <h3 class="button">About me: Ifrah Hammad</h3>
+<p class="info"  style="color:White">I'm Ifrah, and I am the one who coded this website! I have some knowledge in HTML and hardware, and I want to learn more about different languages, such as C++, C#, Java, and Python. Computers have always interested me, especially since I played around with Scratch in middle school. <a href="https://scratch.mit.edu"> Here's a link to Scratch in case you want to try it out.</a>> </p> <br>
+<p class="info" style="color:White"> Hi </p>
+      <h3 class="button">About me: Varun Mohan</h3>
+<p class="info"  style="color:White">I'm Varun, and (insert Varun's info here)</p> <br>
+      <h3 class="button">About me: Aaron Moseley</h3>
+<p class="info"  style="color:White">I'm Aaron, and (insert Aaron's info here)</p> <br>
+ </Center>
+ 
+<script>
+var coll = document.getElementsByClassName("button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+ 
+  </body>
+</html>
