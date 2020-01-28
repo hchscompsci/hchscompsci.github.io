@@ -6,16 +6,22 @@
         <title> HCHS Computer Science Club</title>
 <style>
  
-h1{ color: rgb(252, 3, 148);}
+h1{ color: rgb(141, 233, 235, .8);}
+h2{color: rgb(500,500,500, .8);}
 body{font-family: "Roboto", sans-serif;
-background-color: rgba(66, 0, 122, .75); }
+background-image: url(https://media.idownloadblog.com/wp-content/uploads/2019/10/iOS-7-dark-mod-iphone-wallpaper-ar72014.jpeg);
+background-repeat: no-repeat;
+  background-attachment: scroll;}
          
   .button
- { background-color: #960000;
+ { background-color: #A3C2C9;
+   animation-name: example;
+  animation-duration: 5s;
   border: none;
   color: white;
   padding: 15px 25px;
-  text-align: center;
+  text-align: justify;
+  text-justify: inter-word
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -24,10 +30,15 @@ background-color: rgba(66, 0, 122, .75); }
   box-shadow: 8px #999;
   }
  
- .button:hover {background-color: #c20000}
+ @keyframes example {
+  from {background-color: rgb(63, 156, 232, 0.8);}
+  to {background-color: rgb(163, 0, 147,0.8);}
+}
+ 
+ .button:hover {background-color: #596870}
 
 .button, .active {
-  background-color: #960000;
+  background-color: #A3C2C9;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
   }
